@@ -8,7 +8,7 @@ body {
 }
 
 .full-screen {
-  padding: 8rem 0;
+  padding: 4rem 0;
 }
 
 .small-text {
@@ -76,7 +76,7 @@ b, strong {
 
 .custom-btn {
   background: #eee;
-  color: #5b5b5b;
+  color: #6e38a0;
   font-weight: bold;
   border-radius: 50px;
   padding: 13px 29px;
@@ -89,7 +89,7 @@ b, strong {
   color: #6c63ff;
 }
 .custom-btn.custom-btn-bg {
-  background: #474559;
+  background: #6e38a0;
   color: #ffffff;
 }
 .custom-btn.custom-btn-bg:hover {
@@ -104,17 +104,18 @@ b, strong {
 .animated-info {
   display: inline-block;
   vertical-align: top;
-  margin-top: 5px;
-  min-width: 260px;
+  margin-top: 2px;
+  margin-bottom: 10px;
+  min-width: 520px;
   position: relative;
 }
 
 .animated-item {
-  color: #6c63ff;
+  color: #553480;
 }
 
 .animated-item {
-  font-size: 38px;
+  font-size: 24px;
   line-height: inherit;
   display: block;
   opacity: 0;
@@ -123,16 +124,17 @@ b, strong {
   top: 0;
   right: 0;
   left: 0;
-  animation: BottomTotop 6s linear infinite 0s;
+  animation: BottomTotop 8s linear infinite 0s;
 }
 .animated-item:nth-child(2n+2) {
-  animation-delay: 2s;
+  animation-delay: 3s;
 }
 .animated-item:nth-child(3n+3) {
-  animation-delay: 4s;
+  animation-delay: 6s;
 }
 .animated-para{
-	margin: 5px;
+  margin-top: 2px;
+  margin-bottom: 5px;
 	padding: 5px
 }
 
@@ -519,7 +521,7 @@ b, strong {
 		min-width: 200px;
 	}
   .animated-item {
-    font-size: 30px;
+    font-size: 18px;
   }
 
   .custom-btn-group {
