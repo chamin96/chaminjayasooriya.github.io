@@ -25,6 +25,12 @@
   </head>
 
   <body>
+    <div class="banner">
+      <h5>
+        This site is no longer maintained. Please visit
+        <a href="https://chaminjayasooriya.xyz/">chaminjayasooriya.xyz</a>
+      </h5>
+    </div>
     <!-- MENU -->
     <nav class="navbar navbar-expand-sm navbar-light">
       <div class="container">
@@ -82,7 +88,13 @@
 
     <!-- ABOUT -->
     <section
-      class="about full-screen d-lg-flex justify-content-center align-items-center"
+      class="
+        about
+        full-screen
+        d-lg-flex
+        justify-content-center
+        align-items-center
+      "
       id="about"
     >
       <div class="container">
@@ -274,12 +286,16 @@
                 <div class="timeline-yr">
                   <span>2020</span>
                 </div>
-                  <div class="timeline-info">
-                    <h3><span>Casual Instructor</span><small>Department of Computer Engineering</small></h3>
-                    <p>
-                      Casual Instructor at the Department of Computer Engineering for Programming Methodology course.
-                    </p>
-                  </div>
+                <div class="timeline-info">
+                  <h3>
+                    <span>Casual Instructor</span
+                    ><small>Department of Computer Engineering</small>
+                  </h3>
+                  <p>
+                    Casual Instructor at the Department of Computer Engineering
+                    for Programming Methodology course.
+                  </p>
+                </div>
               </div>
               <div class="timeline-wrapper">
                 <div class="timeline-yr">
@@ -356,12 +372,25 @@
             </div>
 
             <div
-              class="contact-info d-flex justify-content-between align-items-center py-4 px-lg-5"
+              class="
+                contact-info
+                d-flex
+                justify-content-between
+                align-items-center
+                py-4
+                px-lg-5
+              "
             >
               <div class="contact-info-item">
                 <h3 class="mb-3 text-white">Say hello</h3>
-                <p class="footer-text mb-0"><a href="tel:+94763011726">+94 76 301 1726</a></p>
-                <p><a href="mailto:chamin.jayasooriya@outlook.com">chamin.jayasooriya@outlook.com</a></p>
+                <p class="footer-text mb-0">
+                  <a href="tel:+94763011726">+94 76 301 1726</a>
+                </p>
+                <p>
+                  <a href="mailto:chamin.jayasooriya@outlook.com"
+                    >chamin.jayasooriya@outlook.com</a
+                  >
+                </p>
               </div>
 
               <ul class="social-links">
@@ -477,38 +506,38 @@
   </footer> -->
     <script>
       /* contact form */
-    var form = document.forms["contact"];
-    form.addEventListener('submit', contact_submit, false);
+      var form = document.forms["contact"];
+      form.addEventListener("submit", contact_submit, false);
 
-    function contact_submit(e) {
-      console.log('hello');
-      // Stop Form From Submitting
-      e.preventDefault();
+      function contact_submit(e) {
+        console.log("hello");
+        // Stop Form From Submitting
+        e.preventDefault();
 
-      // Set Initial Variables
-      var target = e.target || e.srcElement;
-      var to = 'chamin.jayasooriya@outlook.com';
-      var uri = 'mailto:' + to;
-      var body = '';
+        // Set Initial Variables
+        var target = e.target || e.srcElement;
+        var to = "chamin.jayasooriya@outlook.com";
+        var uri = "mailto:" + to;
+        var body = "";
 
-      // Set Form Values to Variables
-      var name = target.elements['name'].value;
-      var subject = 'Message from ' + target.elements['name'].value;
-      var email = target.elements['email'].value;
-      var message = target.elements['message'].value;
+        // Set Form Values to Variables
+        var name = target.elements["name"].value;
+        var subject = "Message from " + target.elements["name"].value;
+        var email = target.elements["email"].value;
+        var message = target.elements["message"].value;
 
-      // Build Body / Message with all Input Fields
-      body += message + "\r\n\r\n";
-      body += "Name: " + name + "\r\n";
-      body += "Email: " + email + "\r\n";
+        // Build Body / Message with all Input Fields
+        body += message + "\r\n\r\n";
+        body += "Name: " + name + "\r\n";
+        body += "Email: " + email + "\r\n";
 
-      // Build final Mailto URI
-      uri += '?subject=' + encodeURIComponent(subject);
-      uri += '&body=' + encodeURIComponent(body);
+        // Build final Mailto URI
+        uri += "?subject=" + encodeURIComponent(subject);
+        uri += "&body=" + encodeURIComponent(body);
 
-      // Open Mailto in New Window / Tab
-      window.open(uri, '_self');
-    }
+        // Open Mailto in New Window / Tab
+        window.open(uri, "_self");
+      }
     </script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
