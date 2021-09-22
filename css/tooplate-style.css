@@ -12,7 +12,14 @@ body {
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  background-color: sandybrown;
+  background-color: orange;
+  font-weight: lighter !important;
+}
+
+.banner a {
+  color: #e6e6e6;
+  font-weight: 800;
+  text-decoration: underline !important;
 }
 
 .full-screen {
@@ -159,7 +166,7 @@ b, strong {
     transform: translateY(0px);
   }
   25% {
-    opacity: 1;
+    opacity: 1;#ebebeb
     transform: translateY(0px);
   }
   30% {
