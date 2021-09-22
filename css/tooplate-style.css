@@ -7,6 +7,14 @@ body {
   padding-top: 70px;
 }
 
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: sandybrown;
+}
+
 .full-screen {
   padding: 4rem 0;
 }
